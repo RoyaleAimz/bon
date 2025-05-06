@@ -1,0 +1,263 @@
+/* === GENERAL STYLES === */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #0f0f0f;
+  color: #f5f5f5;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* === HEADER === */
+header {
+  background-color: #1a1a1a;
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.navbar .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #61dafb;
+  cursor: pointer;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-links a:hover {
+  color: #61dafb;
+}
+
+.search-bar {
+  margin-left: auto;
+}
+
+.search-bar input {
+  padding: 0.4rem 0.7rem;
+  border-radius: 8px;
+  border: none;
+  background-color: #333;
+  color: #fff;
+}
+
+/* === HERO SECTION === */
+.hero {
+  text-align: center;
+  padding: 4rem 1rem;
+  background: linear-gradient(to right, #1f1f1f, #111);
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: #ccc;
+}
+
+/* === SCRIPTS SECTION === */
+.script-section {
+  padding: 4rem 1rem;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.script-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.script-card {
+  background-color: #1e1e1e;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(97, 218, 251, 0.2);
+  width: 300px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.script-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(97, 218, 251, 0.5);
+}
+
+.script-card h3 {
+  margin-top: 1rem;
+  color: #fff;
+}
+
+.script-card .price {
+  font-size: 1.3rem;
+  color: #61dafb;
+  margin: 0.5rem 0 1rem;
+}
+
+.buy-button {
+  background-color: #61dafb;
+  color: #000;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.badges {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-bottom: 0.5rem;
+}
+
+.badge {
+  padding: 0.3rem 0.6rem;
+  border-radius: 6px;
+  font-size: 0.75rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.badge.green { background-color: #2ecc71; }
+.badge.blue { background-color: #3498db; }
+.badge.purple { background-color: #9b59b6; }
+.badge.gold { background-color: #f1c40f; }
+.badge.red { background-color: #e74c3c; }
+
+/* === SCRIPT DETAIL PAGES === */
+.script-detail {
+  max-width: 800px;
+  margin: 4rem auto;
+  background-color: #1a1a1a;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(97, 218, 251, 0.2);
+}
+
+.script-detail h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.script-detail p {
+  font-size: 1rem;
+  color: #ccc;
+  line-height: 1.6;
+}
+
+.script-detail .features {
+  margin-top: 1rem;
+}
+
+.back-button {
+  margin-top: 2rem;
+  display: inline-block;
+  background-color: #444;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+}
+
+.back-button:hover {
+  background-color: #666;
+}
+
+/* === FOOTER === */
+footer {
+  background-color: #111;
+  padding: 2rem 1rem;
+  color: #ccc;
+  font-size: 0.9rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+footer .footer-column {
+  flex: 1 1 200px;
+  margin: 1rem 0;
+}
+
+.footer-column h4 {
+  color: #fff;
+  margin-bottom: 0.5rem;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin: 0.3rem 0;
+}
+
+.footer-column ul li a {
+  color: #ccc;
+  font-size: 0.9rem;
+}
+
+.footer-column ul li a:hover {
+  color: #61dafb;
+}
+
+.footer-logo {
+  max-width: 100px;
+  margin-bottom: 1rem;
+}
+
+.payment-icons img {
+  height: 24px;
+  margin-right: 8px;
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .script-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  footer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-column {
+    margin: 1rem 0;
+  }
+}
