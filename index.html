@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VantaScripts - Home</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" type="image/png" href="images/vanta-logo.png" />
+</head>
+<body class="dark-theme">
+  <!-- Header -->
+  <header class="navbar">
+    <a href="index.html" class="logo">
+      <img src="images/vanta-logo.png" alt="VantaScripts Logo">
+      <span>VantaScripts</span>
+    </a>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="scripts.html">Scripts</a></li>
+        <li><a href="https://discord.gg/J6dhVNj2" target="_blank">Support</a></li>
+      </ul>
+    </nav>
+    <input type="text" id="searchBar" placeholder="Search scripts..." />
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <h1>Welcome to VantaScripts</h1>
+    <p>Your safest and most effective Rust scripts — undetected and battle-tested.</p>
+  </section>
+
+  <!-- Scripts Section -->
+  <section class="script-showcase">
+    <div class="script-card">
+      <img src="images/lite-icon.png" alt="Lite Script Icon">
+      <h2>Lite Script</h2>
+      <p>$4.99</p>
+      <div class="badges">
+        <span class="badge undetected">🟢 Undetected</span>
+        <span class="badge bestseller">🔥 Best Seller</span>
+      </div>
+      <a href="vantalite.html" class="view-btn">View Details</a>
+    </div>
+    <div class="script-card">
+      <img src="images/vanta-icon.png" alt="VantaScript Icon">
+      <h2>VantaScript</h2>
+      <p>$12.99</p>
+      <div class="badges">
+        <span class="badge undetected">🟢 Undetected</span>
+        <span class="badge safest">🛡️ The Safest</span>
+      </div>
+      <a href="vantafull.html" class="view-btn">View Details</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-left">
+      <img src="images/vanta-logo.png" alt="Vanta Logo">
+      <p>VantaScripts provides premium Rust scripting solutions with a focus on safety, stealth, and reliability.</p>
+    </div>
+    <div class="footer-links">
+      <div>
+        <h4>Navigation</h4>
+        <a href="scripts.html">Catalog</a>
+        <a href="faq.html">FAQ</a>
+        <a href="https://discord.gg/J6dhVNj2" target="_blank">Support</a>
+      </div>
+      <div>
+        <h4>Information</h4>
+        <a href="user-agreement.html">User Agreement</a>
+        <a href="offer-agreement.html">Offer Agreement</a>
+      </div>
+      <div>
+        <h4>Follow Us</h4>
+        <a href="https://discord.gg/J6dhVNj2">Discord</a>
+        <a href="#">YouTube</a>
+      </div>
+    </div>
+    <div class="footer-payments">
+      <img src="images/payments/visa.png" alt="Visa">
+      <img src="images/payments/paypal.png" alt="PayPal">
+      <img src="images/payments/mastercard.png" alt="MasterCard">
+      <img src="images/payments/crypto.png" alt="Crypto">
+    </div>
+  </footer>
+
+  <script>
+    const searchBar = document.getElementById("searchBar");
+    searchBar.addEventListener("keypress", function (e) {
+      if (e.key === "Enter") {
+        alert("Search coming soon: " + searchBar.value);
+      }
+    });
+  </script>
+</body>
+</html>
